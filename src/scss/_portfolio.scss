@@ -1,0 +1,100 @@
+
+#portfolio {
+  display: flex;
+  flex-direction: row;
+  z-index: -1;
+}
+
+[type="radio"] {
+  display: none;
+}
+
+[type="radio"]:checked ~ label ~ .portfolio-items {
+  // z-index: 1;
+  display: block;
+}
+
+[type="radio"]:checked + label {
+  color:$redMid;
+  border-top: 0.5rem solid $yellowLight;
+}
+
+#portfolio {
+  height: 100vh;
+}
+
+.portfolio-tab {
+  font-family: $secondaryFont;
+  font-size: 2rem;
+margin: 3rem;
+margin-left: 0rem;
+}
+
+label {
+  // display: block;
+  // padding-top: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  border: 1px solid transparent;
+  width: 20%;
+  clear: both;
+  font-size: 2rem;
+  font-family: $mainFont;
+  color: $redLight;
+}
+
+label:hover {
+  color: $redMid;
+  transition: ease-in .3s;
+}
+
+
+.portfolio-items {
+display: none;
+position: absolute;
+width: 84%;
+height: 85vh;
+margin-top: 3rem;
+left: 8%;
+}
+
+@media (min-width:$laptop) {
+  .portfolio-items {
+      width: 70%;
+      left: 15%;
+  }
+}
+
+// .portfolio-item {
+//   margin: 3rem;
+// }
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+
+}
+
+@media (min-width: $tablet) {
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+    // grid-gap: 3rem;
+  }
+}
+
+@media (min-width: $laptop) {
+  .gallery {
+    grid-gap: 4rem;
+  }
+}
+
+.portfolio-image {
+  width: 100%;
+}
+
+.portfolio-image:hover {
+  filter: brightness(0.7);
+  transition: ease-in-out  0.1s;
+}

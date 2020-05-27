@@ -1,0 +1,155 @@
+nav a:link {
+  color: $redLight;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: $redLight;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  // margin-bottom: 2rem;
+  background-color: $yellowLight;
+  padding: 2rem;
+}
+
+.nav {
+  font-size: 2.3rem;
+  // font-weight: 600;
+  font-family: $mainFont;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.nav-button {
+  color: $redLight;
+  text-decoration: none;
+  // font-size: 2.5rem;
+  // margin-left: 2.5rem;
+  margin: 0.7rem;
+  transition: 0.3s;
+}
+
+.nav-button:hover {
+  color: $redDark;
+  // margin-left: 3rem;
+}
+
+.footer {
+  z-index: 2;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-family: $secondaryFont;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color: $redLight;
+}
+
+// .nav-socialMedia {
+//   text-align: center;
+// }
+
+// .socialMedia {
+//     margin-left: 3rem;
+//     margin-right: 3rem;
+// }
+
+
+.footer-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-button {
+    transition: .1s ease-in;
+    color: $redLight;
+    text-decoration: none;
+}
+
+.footer-button:hover {
+  color: $redMid;
+}
+
+.faxNumber {
+  transition: .1s ease-in;
+  color: $redLight;
+  text-decoration: none;
+}
+
+.faxNumber:hover {
+  color: $redMid;
+}
+
+@media (max-width: $phone) {
+  .logo {
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet) {
+  .nav {
+    text-align: left;
+  }
+
+
+  .socialMedia-img {
+    width: 3.5rem;
+    margin: 1rem;
+    // margin-left: 3rem;
+    // margin-right: 0;
+  }
+
+  .footer {
+    flex-direction: row;
+  }
+  
+
+  .phoneNumber {
+    margin-right: .75rem;
+  }
+}
+
+@media (min-width: $laptop) {
+  .nav {
+    margin-top: 0;
+  }
+
+  .header {
+    flex-direction: row;
+  }
+
+  .nav-socialMedia {
+    text-align: right;
+  }
+
+  .nav-button {
+    margin-left: 2.5rem;
+    margin-right: 0;
+  }
+  .nav-button:hover {
+    margin-left: 3rem;
+  }
+
+  .footer {
+    margin-bottom: 0rem;
+    font-size: 1.3rem;
+  }
+
+}
+
+@media (min-width: $desktop) {
+  .footer {
+    font-size: 1.7rem;
+  }
+  
+}
