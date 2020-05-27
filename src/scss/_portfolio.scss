@@ -9,7 +9,7 @@
   display: none;
 }
 
-[type="radio"]:checked ~ label ~ .portfolio-items {
+[type="radio"]:checked ~ label ~ .gallery-items {
   // z-index: 1;
   display: block;
 }
@@ -42,6 +42,7 @@ label {
   font-size: 2rem;
   font-family: $mainFont;
   color: $redLight;
+  cursor: pointer;
 }
 
 label:hover {
@@ -50,7 +51,7 @@ label:hover {
 }
 
 
-.portfolio-items {
+.gallery-items {
 display: none;
 position: absolute;
 width: 84%;
@@ -60,13 +61,13 @@ left: 8%;
 }
 
 @media (min-width:$laptop) {
-  .portfolio-items {
+  .gallery-items {
       width: 70%;
       left: 15%;
   }
 }
 
-// .portfolio-item {
+// .gallery-item {
 //   margin: 3rem;
 // }
 
@@ -85,21 +86,41 @@ left: 8%;
 }
 
 @media (min-width: $laptop) {
+
+  #portfolio {
+    height: 120vh;
+  }
+  
   .gallery {
     grid-gap: 4rem;
   }
 }
 
-// .portfolio-item {
+// .gallery-item {
 //   outline: $redLight .2rem solid;
 // }
 
-.portfolio-image {
+.gallery-image {
   width: 100%;
+}
+
+// .gallery-image:hover {
+//   filter: brightness(0.7) saturate(1.5) ;
+//   transition: ease-in-out  0.1s;
+// }
+
+
+.gallery-item-text div {
+opacity: 0;
+display: none;
+  // position: absolute;
+  background-color: $yellowLight;
 
 }
 
-.portfolio-image:hover {
-  filter: brightness(0.7) saturate(1.5) ;
-  transition: ease-in-out  0.1s;
+.gallery-item:hover .gallery-item-text div {
+  display: block;
+position: absolute;
+width: 33.3%;
+  opacity: 0.7;
 }

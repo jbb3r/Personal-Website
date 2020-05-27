@@ -140,7 +140,7 @@ nav a:visited {
   display: none;
 }
 
-[type=radio]:checked ~ label ~ .portfolio-items {
+[type=radio]:checked ~ label ~ .gallery-items {
   display: block;
 }
 
@@ -170,6 +170,7 @@ label {
   font-size: 2rem;
   font-family: "Josefin Sans", sans-serif;
   color: #e19b95;
+  cursor: pointer;
 }
 
 label:hover {
@@ -177,7 +178,7 @@ label:hover {
   transition: ease-in 0.3s;
 }
 
-.portfolio-items {
+.gallery-items {
   display: none;
   position: absolute;
   width: 84%;
@@ -187,7 +188,7 @@ label:hover {
 }
 
 @media (min-width: 1000px) {
-  .portfolio-items {
+  .gallery-items {
     width: 70%;
     left: 15%;
   }
@@ -204,17 +205,29 @@ label:hover {
   }
 }
 @media (min-width: 1000px) {
+  #portfolio {
+    height: 120vh;
+  }
+
   .gallery {
     grid-gap: 4rem;
   }
 }
-.portfolio-image {
+.gallery-image {
   width: 100%;
 }
 
-.portfolio-image:hover {
-  filter: brightness(0.7) saturate(1.5);
-  transition: ease-in-out 0.1s;
+.gallery-item-text div {
+  opacity: 0;
+  display: none;
+  background-color: #ffe68c;
+}
+
+.gallery-item:hover .gallery-item-text div {
+  display: block;
+  position: absolute;
+  width: 33.3%;
+  opacity: 0.7;
 }
 
 html {
