@@ -213,7 +213,7 @@ label:hover {
 }
 
 .portfolio-image:hover {
-  filter: brightness(0.7);
+  filter: brightness(0.7) saturate(1.5);
   transition: ease-in-out 0.1s;
 }
 
@@ -228,14 +228,14 @@ html {
 
 body {
   padding: 0;
-  margin: 5%;
+  margin: 3%;
   margin-left: 8%;
   margin-right: 8%;
 }
 
 @media (min-width: 1000px) {
   body {
-    margin: 5rem;
+    margin: 2%;
     margin-left: 15%;
     margin-right: 15%;
   }

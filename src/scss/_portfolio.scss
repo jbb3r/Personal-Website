@@ -90,11 +90,16 @@ left: 8%;
   }
 }
 
+// .portfolio-item {
+//   outline: $redLight .2rem solid;
+// }
+
 .portfolio-image {
   width: 100%;
+
 }
 
 .portfolio-image:hover {
-  filter: brightness(0.7);
+  filter: brightness(0.7) saturate(1.5) ;
   transition: ease-in-out  0.1s;
 }
