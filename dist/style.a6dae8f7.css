@@ -13,8 +13,8 @@ nav a:visited {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: #ffe68c;
-  padding: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.3rem solid #89e3ef;
 }
 
 .nav {
@@ -33,7 +33,7 @@ nav a:visited {
 }
 
 .nav-button:hover {
-  color: #8a0011;
+  color: #007d8c;
 }
 
 .footer {
@@ -136,6 +136,11 @@ nav a:visited {
   z-index: -1;
 }
 
+@media (min-width: 1000px) {
+  #portfolio {
+    height: 120vh;
+  }
+}
 [type=radio] {
   display: none;
 }
@@ -145,8 +150,8 @@ nav a:visited {
 }
 
 [type=radio]:checked + label {
-  color: #d40600;
-  border-top: 0.5rem solid #ffe68c;
+  color: #e19b95;
+  border-top: 0.5rem solid #fbffca;
 }
 
 #portfolio {
@@ -174,7 +179,7 @@ label {
 }
 
 label:hover {
-  color: #d40600;
+  color: #89e3ef;
   transition: ease-in 0.3s;
 }
 
@@ -196,7 +201,7 @@ label:hover {
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
+  grid-gap: 4%;
 }
 
 @media (min-width: 700px) {
@@ -204,30 +209,68 @@ label:hover {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-@media (min-width: 1000px) {
-  #portfolio {
-    height: 120vh;
-  }
-
-  .gallery {
-    grid-gap: 4rem;
-  }
+.galleryTitle {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  padding: 0.3rem;
+  text-align: center;
 }
+
 .gallery-image {
   width: 100%;
 }
 
-.gallery-item-text div {
-  opacity: 0;
-  display: none;
-  background-color: #ffe68c;
+.gallery-item-box {
+  position: absolute;
+  width: 48%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.3s ease-in;
 }
 
-.gallery-item:hover .gallery-item-text div {
+.gallery-item-box:after {
+  content: "";
   display: block;
+  padding-top: 100%;
+}
+
+.gallery-item:hover .gallery-item-box {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 700px) {
+  .gallery-item-box {
+    width: 30.68%;
+  }
+}
+.gallery-item-text {
   position: absolute;
-  width: 33.3%;
-  opacity: 0.7;
+  display: table-cell;
+  opacity: 0;
+  transition: 0.3s ease-in;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  z-index: 2;
+  width: 48%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.gallery-item-text:after {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+@media (min-width: 700px) {
+  .gallery-item-text {
+    width: 30.68%;
+  }
+}
+.gallery-item:hover .gallery-item-text {
+  opacity: 1;
 }
 
 html {
@@ -244,6 +287,7 @@ body {
   margin: 3%;
   margin-left: 8%;
   margin-right: 8%;
+  background-color: #25252c;
 }
 
 @media (min-width: 1000px) {

@@ -13,9 +13,10 @@ nav a:visited {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  // margin-bottom: 2rem;
-  background-color: $yellowLight;
-  padding: 2rem;
+  padding-bottom: 2rem;
+  // background-color: $yellowMid;
+  // padding: 2rem;
+  border-bottom: 0.3rem solid $blueLight;
 }
 
 .nav {
@@ -37,7 +38,7 @@ nav a:visited {
 }
 
 .nav-button:hover {
-  color: $redDark;
+  color: $blueMid;
   // margin-left: 3rem;
 }
 
