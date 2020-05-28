@@ -20,7 +20,6 @@ nav a:visited {
 }
 
 .nav {
-  font-size: 2.3rem;
   // font-weight: 600;
   font-family: $mainFont;
   margin-bottom: 1rem;
@@ -31,9 +30,10 @@ nav a:visited {
 .nav-button {
   color: $redLight;
   text-decoration: none;
+  font-size: 2rem;
   // font-size: 2.5rem;
   // margin-left: 2.5rem;
-  margin: 0.7rem;
+  margin: 0.5rem;
   transition: 0.3s;
 }
 
@@ -102,6 +102,10 @@ nav a:visited {
     text-align: left;
   }
 
+  .nav-button {
+    font-size: 2.3rem;
+    margin: .7rem;
+  }
 
   .socialMedia-img {
     width: 3.5rem;

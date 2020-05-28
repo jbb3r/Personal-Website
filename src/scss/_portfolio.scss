@@ -2,6 +2,31 @@
   display: flex;
   flex-direction: row;
   z-index: -1;
+  height: 130vh;
+}
+
+@media (min-width: $phone) {
+  #portfolio {
+    height: 145vh;
+  }
+}
+
+@media (min-width:550px) {
+  #portfolio {
+    height: 175vh;
+  }
+}
+
+@media (min-width: $tablet) {
+  #portfolio {
+    height: 100vh;
+  }
+}
+
+@media (min-width: $laptop) {
+  #portfolio {
+    height: 120vh;
+  }
 }
 
 @media (min-width: $laptop) {
@@ -24,15 +49,20 @@
   border-top: 0.5rem solid $yellowLight;
 }
 
-#portfolio {
-  height: 100vh;
-}
-
 .portfolio-tab {
   font-family: $secondaryFont;
-  font-size: 2rem;
-  margin: 3rem;
+  font-size: 1.7rem;
+  margin: 1rem;
   margin-left: 0rem;
+  margin-top: 3rem;
+}
+
+@media (min-width:$tablet) {
+  .portfolio-tab{
+    font-size: 2rem;
+  margin: 2rem;
+  margin-left: 0;
+  }
 }
 
 label {
@@ -40,11 +70,8 @@ label {
   // padding-top: 1rem;
   font-weight: 400;
   font-style: italic;
-  text-align: center;
   border: 1px solid transparent;
-  width: 20%;
-  clear: both;
-  font-size: 2rem;
+  // font-size: 2rem;
   font-family: $mainFont;
   color: $redLight;
   cursor: pointer;
@@ -59,7 +86,7 @@ label:hover {
   display: none;
   position: absolute;
   width: 84%;
-  height: 85vh;
+  // height: 85vh;
   margin-top: 3rem;
   left: 8%;
 }
@@ -172,4 +199,8 @@ label:hover {
 
 .gallery-item:hover .gallery-item-text {
   opacity: 1;
+}
+
+#designersEdge {
+  margin-top: 4rem;
 }
