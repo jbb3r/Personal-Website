@@ -33,7 +33,7 @@ nav a:visited {
 }
 
 .nav-button:hover {
-  color: #007d8c;
+  color: #89e3ef;
 }
 
 .footer {
@@ -62,17 +62,7 @@ nav a:visited {
 }
 
 .footer-button:hover {
-  color: #d40600;
-}
-
-.faxNumber {
-  transition: 0.1s ease-in;
-  color: #e19b95;
-  text-decoration: none;
-}
-
-.faxNumber:hover {
-  color: #d40600;
+  color: #fbffca;
 }
 
 @media (max-width: 400px) {
@@ -133,6 +123,37 @@ nav a:visited {
 @media (min-width: 1400px) {
   .footer {
     font-size: 1.7rem;
+  }
+}
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0;
+  filter: brightness(0.4);
+}
+
+.home img {
+  width: 100%;
+}
+
+.home2 {
+  grid-gap: 0;
+  filter: brightness(0.4);
+  display: none;
+}
+
+.home2 img {
+  width: 100%;
+}
+
+@media (min-width: 1400px) {
+  .home {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .home2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
 #portfolio {

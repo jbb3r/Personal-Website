@@ -1,0 +1,41 @@
+// .main {
+//     display: flex;
+//     flex-direction: row;
+// }
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
+    filter: brightness(0.4);
+
+}
+
+.home img {
+    width: 100%;
+}
+
+.home2 {
+    grid-gap: 0;
+    filter: brightness(0.4);
+    display: none;
+}
+
+.home2 img {
+    width: 100% ;
+}
+
+@media (min-width:$laptop) {
+
+
+}
+
+@media (min-width:$desktop) {
+    .home {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .home2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}

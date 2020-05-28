@@ -38,7 +38,7 @@ nav a:visited {
 }
 
 .nav-button:hover {
-  color: $blueMid;
+  color: $blueLight;
   // margin-left: 3rem;
 }
 
@@ -78,17 +78,7 @@ nav a:visited {
 }
 
 .footer-button:hover {
-  color: $redMid;
-}
-
-.faxNumber {
-  transition: .1s ease-in;
-  color: $redLight;
-  text-decoration: none;
-}
-
-.faxNumber:hover {
-  color: $redMid;
+  color: $yellowLight;
 }
 
 @media (max-width: $phone) {
