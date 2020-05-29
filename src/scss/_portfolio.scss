@@ -131,7 +131,7 @@ label:hover {
   font-family: $mainFont;
   color: white;
   font-size: 1.7rem;
-  margin-bottom: 2rem;
+margin: 2rem;
   // background-color: rgb(251, 255, 202);
   padding: 0.3rem;
   text-align: center;
@@ -180,13 +180,15 @@ label:hover {
   transition: 0.3s ease-in;
   font-family: $secondaryFont;
   font-weight: 100;
-  font-size: 1.75rem;
+  font-size: 1.4rem;
   color: white;
   z-index: 2;
-  width: 48%;
+  padding: 2%;
+  width: 44%;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-transform: uppercase;
 
 }
 
@@ -202,16 +204,81 @@ label:hover {
 
 @media (min-width: $tablet) {
   .gallery-item-text {
-   width: 30.667%;
+   width: 26.667%;
   //  padding-top: 14.5%;
  }
 }
 
-#designersEdge {
-  margin-top: 4rem;
+@media (min-width: $laptop) {
+  .gallery-item-text {
+   font-size: 1.75rem;
+ }
 }
 
-svg {
-  fill:  rgb(82, 70, 255);
-  background-color: $yellowLight;
+#portfolio-subTitle {
+  margin-top: 8%;
+  // color: $yellowLight;
+}
+
+@media (min-width:$tablet) {
+  #portfolio-subTitle {
+    margin-top: 2rem;
+  }
+}
+
+.SISC {
+  fill:  rgb(229, 227, 255);
+  background-color: black;
+}
+
+.inventor {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.inventor-text {
+  width: 96%;
+  height: 42.67vw;
+}
+
+@media (min-width:$tablet) {
+  .inventor-text {
+    height: 42.67vw;
+  }
+}
+
+.inventor-box {
+  // display: none;
+  position: absolute;
+  width: 100%;
+  height: 45.9vw;
+  background-color: rgba(black, $alpha: 0);
+  transition: 0.3s ease-in;
+}
+
+.inventor-text:after {
+  content: "";
+  display: block;
+  padding-top: 50%;
+}
+
+
+.gallery-item:hover .inventor-box {
+  background-color: rgba(black, $alpha: 0.6);
+}
+
+@media (min-width: $tablet) {
+  .inventor-box {
+    height: 46.31vw;
+  }
+}
+
+@media (min-width: $laptop) {
+  .inventor-box {
+    height: 38.95vw;
+  }
+
+  .inventor-text {
+    height: 36.2vw;
+  }
 }
