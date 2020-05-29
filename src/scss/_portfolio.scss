@@ -98,9 +98,11 @@ label:hover {
   }
 }
 
-// .gallery-item {
-//   margin: 3rem;
-// }
+.gallery-item {
+  text-align: center;
+  // display: table;
+  
+}
 
 .gallery {
   display: grid;
@@ -134,6 +136,7 @@ label:hover {
   padding: 0.3rem;
   text-align: center;
 }
+
 
 .gallery-image {
   width: 100%;
@@ -173,16 +176,18 @@ label:hover {
 
 .gallery-item-text {
   position: absolute;
-  display: table-cell;
   opacity: 0;
   transition: 0.3s ease-in;
   font-family: $secondaryFont;
-  font-size: 1.5rem;
+  font-weight: 100;
+  font-size: 1.75rem;
   color: white;
   z-index: 2;
   width: 48%;
-  text-align: center;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .gallery-item-text:after {
@@ -191,16 +196,22 @@ label:hover {
   padding-top: 100%;
 }
 
-@media (min-width: $tablet) {
-  .gallery-item-text {
-   width: 30.68%;
- }
-}
-
 .gallery-item:hover .gallery-item-text {
   opacity: 1;
 }
 
+@media (min-width: $tablet) {
+  .gallery-item-text {
+   width: 30.667%;
+  //  padding-top: 14.5%;
+ }
+}
+
 #designersEdge {
   margin-top: 4rem;
+}
+
+svg {
+  fill:  rgb(82, 70, 255);
+  background-color: $yellowLight;
 }
