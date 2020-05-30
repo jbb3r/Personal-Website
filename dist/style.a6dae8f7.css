@@ -160,32 +160,32 @@ nav a:visited {
   display: flex;
   flex-direction: row;
   z-index: -1;
-  height: 130vh;
+  height: 135vh;
 }
 
 @media (min-width: 400px) {
   #portfolio {
-    height: 145vh;
+    height: 175vh;
   }
 }
 @media (min-width: 550px) {
   #portfolio {
-    height: 175vh;
+    height: 220vh;
   }
 }
 @media (min-width: 700px) {
   #portfolio {
-    height: 100vh;
+    height: 200vh;
   }
 }
 @media (min-width: 1000px) {
   #portfolio {
-    height: 120vh;
+    height: 215vh;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1400px) {
   #portfolio {
-    height: 120vh;
+    height: 250vh;
   }
 }
 [type=radio] {
@@ -351,33 +351,33 @@ label:hover {
 }
 
 .inventor-text {
-  width: 96%;
-  height: 42.67vw;
+  position: absolute;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 100;
+  font-size: 1.4rem;
+  color: white;
+  z-index: 2;
+  padding: 4%;
+  text-transform: uppercase;
 }
 
-@media (min-width: 700px) {
-  .inventor-text {
-    height: 42.67vw;
-  }
-}
 .inventor-box {
   position: absolute;
   width: 100%;
-  height: 46.2vw;
+  height: 47.3vw;
   background-color: rgba(0, 0, 0, 0);
   transition: 0.3s ease-in;
-}
-
-.inventor-text:after {
-  content: "";
-  display: block;
-  padding-top: 50%;
 }
 
 .gallery-item:hover .inventor-box {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+@media (min-width: 400px) {
+  .inventor-box {
+    height: 46.2vw;
+  }
+}
 @media (min-width: 700px) {
   .inventor-box {
     height: 46.5vw;
@@ -389,7 +389,7 @@ label:hover {
   }
 
   .inventor-text {
-    height: 36.2vw;
+    font-size: 1.75rem;
   }
 }
 html {

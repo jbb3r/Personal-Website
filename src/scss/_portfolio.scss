@@ -2,36 +2,36 @@
   display: flex;
   flex-direction: row;
   z-index: -1;
-  height: 130vh;
+  height: 135vh;
 }
 
 @media (min-width: $phone) {
-  #portfolio {
-    height: 145vh;
-  }
-}
-
-@media (min-width:550px) {
   #portfolio {
     height: 175vh;
   }
 }
 
+@media (min-width:550px) {
+  #portfolio {
+    height: 220vh;
+  }
+}
+
 @media (min-width: $tablet) {
   #portfolio {
-    height: 100vh;
+    height: 200vh;
   }
 }
 
 @media (min-width: $laptop) {
   #portfolio {
-    height: 120vh;
+    height: 215vh;
   }
 }
 
-@media (min-width: $laptop) {
+@media (min-width: $desktop) {
   #portfolio {
-    height: 120vh;
+    height: 250vh;
   }
 }
 
@@ -237,34 +237,40 @@ margin: 2rem;
 }
 
 .inventor-text {
-  width: 96%;
-  height: 42.67vw;
+  position: absolute;
+  font-family: $secondaryFont;
+  font-weight: 100;
+  font-size: 1.4rem;
+  color: white;
+  z-index: 2;
+  padding: 4%;
+  text-transform: uppercase;
 }
 
-@media (min-width:$tablet) {
-  .inventor-text {
-    height: 42.67vw;
-  }
-}
 
 .inventor-box {
-  // display: none;
   position: absolute;
   width: 100%;
-  height: 46.2vw;
+  height: 47.3vw;
   background-color: rgba(black, $alpha: 0);
   transition: 0.3s ease-in;
 }
 
-.inventor-text:after {
-  content: "";
-  display: block;
-  padding-top: 50%;
-}
+// .inventor-text:after {
+//   content: "";
+//   display: block;
+//   padding-top: 50%;
+// }
 
 
 .gallery-item:hover .inventor-box {
   background-color: rgba(black, $alpha: 0.6);
+}
+
+@media (min-width: $phone) {
+  .inventor-box {
+    height: 46.2vw;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -279,6 +285,6 @@ margin: 2rem;
   }
 
   .inventor-text {
-    height: 36.2vw;
+    font-size: 1.75rem;
   }
 }
