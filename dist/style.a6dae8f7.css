@@ -156,6 +156,13 @@ nav a:visited {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
+p {
+  color: #25252c;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
 #portfolio {
   display: flex;
   flex-direction: row;
@@ -234,7 +241,6 @@ label:hover {
   display: none;
   position: absolute;
   width: 84%;
-  margin-top: 3rem;
   left: 8%;
 }
 
@@ -304,7 +310,7 @@ label:hover {
   color: white;
   z-index: 2;
   padding: 2%;
-  width: 44%;
+  width: 48%;
   display: flex;
   align-items: center;
   justify-content: center;
