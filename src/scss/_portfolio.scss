@@ -73,13 +73,13 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 4%;
+  // margin: 4%;
 }
 
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  // grid-gap: 4%;
+  grid-gap: 4%;
 }
 
 @media (min-width: $tablet) {
