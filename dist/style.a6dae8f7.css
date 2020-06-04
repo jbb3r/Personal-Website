@@ -205,6 +205,9 @@ p {
 
 .gallery-item {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .gallery {
@@ -250,7 +253,7 @@ p {
 
 @media (min-width: 700px) {
   .gallery-item-box {
-    width: 25.75%;
+    width: 25.8%;
   }
 }
 @media (min-width: 1000px) {
@@ -270,15 +273,8 @@ p {
   padding: 2%;
   width: 40.5%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   text-transform: uppercase;
-}
-
-.gallery-item-text:after {
-  content: "";
-  display: block;
-  padding-top: 100%;
 }
 
 .gallery-item:hover .gallery-item-text {
@@ -287,7 +283,7 @@ p {
 
 @media (min-width: 700px) {
   .gallery-item-text {
-    width: 25.75%;
+    width: 25.8%;
   }
 }
 @media (min-width: 1000px) {
