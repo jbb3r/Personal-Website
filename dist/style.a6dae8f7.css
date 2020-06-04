@@ -157,6 +157,7 @@ a {
   flex-direction: column;
   width: 30rem;
   font-size: 3rem;
+  margin: 0.75rem;
 }
 
 @media (min-width: 550px) {
@@ -168,7 +169,6 @@ a {
   }
 }
 .main-text a {
-  margin: 0.5rem;
   padding: 1rem;
   color: #fbffca;
   background-color: #005752;
