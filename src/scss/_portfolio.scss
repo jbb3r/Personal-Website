@@ -9,6 +9,10 @@ p {
   text-transform: uppercase;
 }
 
+.carousel-control {
+  transition: 0.1s ease-in ;
+}
+
 @media (min-width:$tablet) {
   p {
     font-size: 2rem;
@@ -73,13 +77,13 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  // margin: 4%;
+  margin: 4%;
 }
 
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 4%;
+  // grid-gap: 4%;
 }
 
 @media (min-width: $tablet) {
@@ -117,7 +121,7 @@ margin: 2rem;
 .gallery-item-box {
   // display: none;
   position: absolute;
-  width: 40.5%;
+  width: 38.7%;
   background-color: rgba(black, $alpha: 0);
   transition: 0.3s ease-in;
 }
