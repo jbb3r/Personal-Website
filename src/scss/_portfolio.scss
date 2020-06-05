@@ -7,6 +7,13 @@ p {
   font-family: $secondaryFont;
   font-size: 1.5rem;
   text-transform: uppercase;
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  p {
+    display: inline;
+  }
 }
 
 .carousel-control {

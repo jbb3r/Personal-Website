@@ -216,8 +216,14 @@ p {
   font-family: "Work Sans", sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
+  display: none;
 }
 
+@media (min-width: 700px) {
+  p {
+    display: inline;
+  }
+}
 .carousel-control {
   transition: 0.1s ease-in;
 }
