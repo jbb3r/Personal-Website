@@ -197,6 +197,10 @@ margin: 2rem;
  }
 }
 
+.gallery-item-text-text {
+  color: white;
+}
+
 #portfolio-subTitle {
   margin-top: 8%;
   // color: $yellowLight;
@@ -227,44 +231,40 @@ margin: 2rem;
   z-index: 2;
   padding: 4%;
   text-transform: uppercase;
+  opacity: 0;
+}
+
+.gallery.inventor:hover .inventor-text {
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
+
+.inventor-container {
+  position: absolute;
+  width: 84%;
+  height: 47.25vw;
+}
+
+@media (min-width: $laptop) {
+  .inventor-container {
+    width: 70%;
+    height: 39.375vw;
+  }
 }
 
 
 .inventor-box {
-  position: absolute;
-  width: 100%;
-  height: 47.3vw;
   background-color: rgba(black, $alpha: 0);
   transition: 0.3s ease-in;
+  width: 100%;
+  height: 100%;
 }
 
-// .inventor-text:after {
-//   content: "";
-//   display: block;
-//   padding-top: 50%;
-// }
-
-
-.gallery-item:hover .inventor-box {
+.gallery.inventor:hover .inventor-box {
   background-color: rgba(black, $alpha: 0.6);
 }
 
-@media (min-width: $phone) {
-  .inventor-box {
-    height: 46.2vw;
-  }
-}
-
-@media (min-width: $tablet) {
-  .inventor-box {
-    height: 46.5vw;
-  }
-}
-
 @media (min-width: $laptop) {
-  .inventor-box {
-    height: 38.95vw;
-  }
 
   .inventor-text {
     font-size: 1.75rem;
