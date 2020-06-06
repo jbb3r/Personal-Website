@@ -218,8 +218,9 @@ margin: 2rem;
 }
 
 .inventor {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .inventor-text {
@@ -236,19 +237,19 @@ margin: 2rem;
 
 .gallery.inventor:hover .inventor-text {
   opacity: 1;
-  transition: 0.5s ease-in;
+  transition: 0.3s ease-in;
 }
 
 .inventor-container {
   position: absolute;
   width: 84%;
-  height: 47.25vw;
+  height: 46.3vw;
 }
 
 @media (min-width: $laptop) {
   .inventor-container {
     width: 70%;
-    height: 39.375vw;
+    height: 39vw;
   }
 }
 

@@ -1,0 +1,33 @@
+.portfolio-items {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: $laptop) {
+    .portfolio-items {
+        grid-template-columns: 2fr 1fr;
+        .portfolio-item {
+            margin: 2rem;
+        }
+        
+    }
+}
+
+
+.portfolio-images {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.portfolio-item-description-1 {
+    font-family: $mainFont;
+    color: $yellowLight;
+    font-style: italic;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.portfolio-item-description {
+    font-family: $secondaryFont;
+    color: white;
+}
