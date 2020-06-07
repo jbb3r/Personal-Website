@@ -423,35 +423,47 @@ p {
     font-size: 1.75rem;
   }
 }
+.portfolio-items-container {
+  color: #fbffca;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
 .portfolio-items {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 @media (min-width: 1000px) {
   .portfolio-items {
+    display: grid;
     grid-template-columns: 2fr 1fr;
   }
   .portfolio-items .portfolio-item {
     margin: 2rem;
   }
 }
-.portfolio-images {
-  width: 100%;
-  margin-top: 2rem;
+.portfolioVideo {
+  margin-bottom: 3rem;
 }
 
-.portfolio-item-description-1 {
-  font-family: "Josefin Sans", sans-serif;
-  color: #fbffca;
-  font-style: italic;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.portfolio-images {
+  width: 100%;
+  margin-bottom: 3rem;
 }
 
 .portfolio-item-description {
+  font-family: "Josefin Sans", sans-serif;
+  color: #fbffca;
+  font-style: italic;
+  margin-bottom: 4rem;
+}
+
+.portfolio-item-description-sub {
   font-family: "Work Sans", sans-serif;
   color: white;
+  font-style: normal;
+  margin-top: 2rem;
 }
 
 html {

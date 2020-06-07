@@ -1,10 +1,17 @@
+.portfolio-items-container {
+    color: $yellowLight;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
 .portfolio-items {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 @media (min-width: $laptop) {
     .portfolio-items {
+        display: grid;
         grid-template-columns: 2fr 1fr;
         .portfolio-item {
             margin: 2rem;
@@ -13,21 +20,28 @@
     }
 }
 
+.portfolioVideo {
+    margin-bottom: 3rem;
+}
 
 .portfolio-images {
     width: 100%;
-    margin-top: 2rem;
-}
-
-.portfolio-item-description-1 {
-    font-family: $mainFont;
-    color: $yellowLight;
-    font-style: italic;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .portfolio-item-description {
+    font-family: $mainFont;
+    color: $yellowLight;
+    font-style: italic;
+    // margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.portfolio-item-description-sub {
     font-family: $secondaryFont;
     color: white;
+    font-style: normal;
+    margin-top: 2rem;
+
+    // margin-bottom: 2rem;
 }
