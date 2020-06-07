@@ -271,3 +271,66 @@ margin: 2rem;
     font-size: 1.75rem;
   }
 }
+
+
+//`````````````````````````````````````````````````
+
+.murals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.murals-text {
+  position: absolute;
+  font-family: $secondaryFont;
+  font-weight: 100;
+  font-size: 1.4rem;
+  color: white;
+  z-index: 2;
+  padding: 4%;
+  text-transform: uppercase;
+  opacity: 0;
+  text-align: center;
+}
+
+.gallery.murals {
+  margin-bottom: 4%;
+}
+
+.gallery.murals:hover .murals-text {
+  opacity: 1;
+  transition: 0.3s ease-in;
+}
+
+.murals-container {
+  position: absolute;
+  width: 84%;
+  height: 34.9vw;
+}
+
+@media (min-width: $laptop) {
+  .murals-container {
+    width: 70%;
+    height: 29.5vw;
+  }
+}
+
+
+.murals-box {
+  background-color: rgba(black, $alpha: 0);
+  transition: 0.3s ease-in;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery.murals:hover .murals-box {
+  background-color: rgba(black, $alpha: 0.6);
+}
+
+@media (min-width: $laptop) {
+
+  .murals-text {
+    font-size: 1.75rem;
+  }
+}
