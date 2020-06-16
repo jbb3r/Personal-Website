@@ -1,6 +1,6 @@
 @import "./variables";
 @import "./headerAndFooter";
-@import "./index";
+@import "./about-contact";
 @import "./portfolio";
 @import "./portfolio_items";
 
@@ -17,7 +17,7 @@ html {
 body {
 
     padding: 0;
-    margin: 3%;
+    margin: 5%;
     margin-left: 8%;
     margin-right: 8%;
     background-color: $grey;
