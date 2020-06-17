@@ -131,12 +131,10 @@ a:hover {
 }
 a:visited {
   text-decoration: none;
-  color: inherit;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
 }
 
 .about-contact-content {
@@ -170,14 +168,30 @@ a {
 
 @media (min-width: 1400px) {
   .about-contact-text {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
   }
 }
 .about-contact-text div {
   margin-bottom: 1rem;
 }
 
+.resume {
+  color: #fbffca;
+  font-family: "Josefin Sans", sans-serif;
+  transition: ease-in 0.15s;
+  font-size: 1.5rem;
+}
+
+.resume:hover {
+  color: #89e3ef;
+}
+
+@media (min-width: 1400px) {
+  .resume {
+    font-size: 1.9rem;
+  }
+}
 p {
   font-family: "Work Sans", sans-serif;
   font-size: 1.5rem;

@@ -2,12 +2,12 @@
 
 a:visited {
   text-decoration: none;
-  color: inherit;
+  // color: inherit;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+  // color: inherit;
 }
 
 .about-contact-content {
@@ -44,8 +44,8 @@ a {
 
 @media (min-width: $desktop) {
   .about-contact-text {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
     // font-weight: 400;
   }
   
@@ -54,6 +54,27 @@ a {
 .about-contact-text div {
   margin-bottom: 1rem;
 }
+
+.resume {
+  color: $yellowLight;
+  font-family: $mainFont;
+  transition: ease-in 0.15s;
+  // padding-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.resume:hover {
+  color: $blueLight;
+  // margin-left: 1rem;
+}
+
+@media (min-width: $desktop) {
+  .resume {
+    font-size: 1.9rem;
+  }
+  
+}
+
 
 // .home {
 //   display: grid;
