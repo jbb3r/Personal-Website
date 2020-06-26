@@ -111,7 +111,7 @@ a {
 // }
 
 .contactForm {
-  margin-top: 3rem;
+  margin-top: 5rem;
   // background-color: $redLight;
   // outline: white solid .3rem;
   // padding: 2rem;
@@ -146,11 +146,9 @@ input {
 
 textarea {
   width: 100%;
-  height: 20rem;
   padding: .5rem;
   font-style: oblique;
   font-family: $secondaryFont;
-    font-size: 1.5rem;
 }
 
 .submit {
@@ -171,7 +169,7 @@ textarea {
   font-family: $mainFont;
   font-size: 3rem;
   margin: auto;
-  display: flex;
+  display: grid;
   align-items: center;
   height: 20rem;
 }
