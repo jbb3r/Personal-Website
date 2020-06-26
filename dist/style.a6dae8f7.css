@@ -198,6 +198,11 @@ a {
   font-family: "Josefin Sans", sans-serif;
 }
 
+.botfield {
+  height: 0.1rem;
+  overflow: hidden;
+}
+
 .contactName {
   display: grid;
   grid-template-columns: 1fr 1fr;

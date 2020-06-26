@@ -120,6 +120,11 @@ a {
 
 }
 
+.botfield {
+  height: .1rem;
+  overflow: hidden;
+}
+
 .contactName {
   display: grid;
   grid-template-columns: 1fr 1fr;
