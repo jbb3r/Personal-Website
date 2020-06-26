@@ -64,7 +64,7 @@ a {
 }
 
 .resume:hover {
-  color: $redLight;
+  color: $blueLight;
   // margin-left: 1rem;
 }
 
@@ -116,7 +116,6 @@ a {
   // outline: white solid .3rem;
   // padding: 2rem;
   color: $redLight;
-
   font-family: $mainFont;
 
 }
@@ -127,20 +126,18 @@ a {
   grid-gap: 1rem;
 }
 
+label {
+  font-size: 1.5rem;
+  // color: $yellowLight;
+}
+
 input {
   width: 100%;
   padding: .5rem;
   font-style: oblique;
   font-family: $secondaryFont;
+  font-size: 1.5rem;
 }
-
-// .firstName {
-//   width: 100%;
-// }
-
-// .lastName {
-//   width: 100%;
-// }
 
 textarea {
   width: 100%;
@@ -148,6 +145,7 @@ textarea {
   padding: .5rem;
   font-style: oblique;
   font-family: $secondaryFont;
+    font-size: 1.5rem;
 }
 
 .submit {
