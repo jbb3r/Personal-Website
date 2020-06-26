@@ -64,7 +64,7 @@ a {
 }
 
 .resume:hover {
-  color: $blueLight;
+  color: $redLight;
   // margin-left: 1rem;
 }
 
@@ -110,3 +110,55 @@ a {
 //   }
 // }
 
+.contactForm {
+  margin-top: 3rem;
+  // background-color: $redLight;
+  // outline: white solid .3rem;
+  // padding: 2rem;
+  color: $redLight;
+
+  font-family: $mainFont;
+
+}
+
+.contactName {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: .5rem;
+  font-style: oblique;
+  font-family: $secondaryFont;
+}
+
+// .firstName {
+//   width: 100%;
+// }
+
+// .lastName {
+//   width: 100%;
+// }
+
+textarea {
+  width: 100%;
+  height: 20rem;
+  padding: .5rem;
+  font-style: oblique;
+  font-family: $secondaryFont;
+}
+
+.submit {
+  background-color: $yellowLight;
+  border: none;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.submit:hover {
+   background-color: $blueLight;
+   transition: .15s ease-in;
+}

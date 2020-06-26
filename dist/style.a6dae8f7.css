@@ -184,7 +184,7 @@ a {
 }
 
 .resume:hover {
-  color: #89e3ef;
+  color: #e19b95;
 }
 
 @media (min-width: 1400px) {
@@ -192,6 +192,46 @@ a {
     font-size: 1.9rem;
   }
 }
+.contactForm {
+  margin-top: 3rem;
+  color: #e19b95;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.contactName {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  font-style: oblique;
+  font-family: "Work Sans", sans-serif;
+}
+
+textarea {
+  width: 100%;
+  height: 20rem;
+  padding: 0.5rem;
+  font-style: oblique;
+  font-family: "Work Sans", sans-serif;
+}
+
+.submit {
+  background-color: #fbffca;
+  border: none;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.submit:hover {
+  background-color: #89e3ef;
+  transition: 0.15s ease-in;
+}
+
 p {
   font-family: "Work Sans", sans-serif;
   font-size: 1.5rem;
