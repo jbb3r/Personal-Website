@@ -165,3 +165,17 @@ textarea {
    background-color: $blueLight;
    transition: .15s ease-in;
 }
+
+.thankyou {
+  color: white;
+  font-family: $mainFont;
+  font-size: 3rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 20rem;
+}
+
+.thankyou div {
+  text-align: center;
+}

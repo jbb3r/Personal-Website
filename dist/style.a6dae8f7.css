@@ -243,6 +243,20 @@ textarea {
   transition: 0.15s ease-in;
 }
 
+.thankyou {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 20rem;
+}
+
+.thankyou div {
+  text-align: center;
+}
+
 p {
   font-family: "Work Sans", sans-serif;
   font-size: 1.5rem;
