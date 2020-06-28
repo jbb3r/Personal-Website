@@ -235,6 +235,10 @@ textarea {
   text-transform: uppercase !important;
   font-style: normal !important;
   font-weight: bold !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 1;
 }
 
 .submit:hover {

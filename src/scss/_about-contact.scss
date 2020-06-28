@@ -1,5 +1,3 @@
-
-
 a:visited {
   text-decoration: none;
   // color: inherit;
@@ -12,7 +10,7 @@ a {
 
 .about-contact-content {
   display: grid;
-  grid-template-columns: 1fr ;
+  grid-template-columns: 1fr;
   grid-gap: 3rem;
   margin-top: 3rem;
 }
@@ -48,7 +46,6 @@ a {
     line-height: 2.2rem;
     // font-weight: 400;
   }
-  
 }
 
 .about-contact-text div {
@@ -72,9 +69,7 @@ a {
   .resume {
     font-size: 1.9rem;
   }
-  
 }
-
 
 // .home {
 //   display: grid;
@@ -117,11 +112,10 @@ a {
   // padding: 2rem;
   color: $redLight;
   font-family: $mainFont;
-
 }
 
 .botField {
-  height: .1rem;
+  height: 0.1rem;
   overflow: hidden;
 }
 
@@ -138,7 +132,7 @@ label {
 
 input {
   width: 100%;
-  padding: .5rem;
+  padding: 0.5rem;
   font-style: oblique;
   font-family: $secondaryFont;
   font-size: 1.5rem;
@@ -146,23 +140,27 @@ input {
 
 textarea {
   width: 100%;
-  padding: .5rem;
+  padding: 0.5rem;
   font-style: oblique;
   font-family: $secondaryFont;
   font-size: 1.5rem;
 }
 
 .submit {
-  background-color: $yellowLight!important;
-  border: none!important;
-  text-transform: uppercase!important;
-  font-style: normal!important;
-  font-weight: bold!important;
+  background-color: $yellowLight !important;
+  border: none !important;
+  text-transform: uppercase !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 1;
 }
 
 .submit:hover {
-   background-color: $blueLight!important;
-   transition: .15s ease-in!important;
+  background-color: $blueLight !important;
+  transition: 0.15s ease-in !important;
 }
 
 .thankyou {
