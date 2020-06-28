@@ -230,16 +230,16 @@ textarea {
 }
 
 .submit {
-  background-color: #fbffca;
-  border: none;
-  text-transform: uppercase;
-  font-style: normal;
-  font-weight: bold;
+  background-color: #fbffca !important;
+  border: none !important;
+  text-transform: uppercase !important;
+  font-style: normal !important;
+  font-weight: bold !important;
 }
 
 .submit:hover {
-  background-color: #89e3ef;
-  transition: 0.15s ease-in;
+  background-color: #89e3ef !important;
+  transition: 0.15s ease-in !important;
 }
 
 .thankyou {

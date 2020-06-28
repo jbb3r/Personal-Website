@@ -153,16 +153,16 @@ textarea {
 }
 
 .submit {
-  background-color: $yellowLight;
-  border: none;
-  text-transform: uppercase;
-  font-style: normal;
-  font-weight: bold;
+  background-color: $yellowLight!important;
+  border: none!important;
+  text-transform: uppercase!important;
+  font-style: normal!important;
+  font-weight: bold!important;
 }
 
 .submit:hover {
-   background-color: $blueLight;
-   transition: .15s ease-in;
+   background-color: $blueLight!important;
+   transition: .15s ease-in!important;
 }
 
 .thankyou {
