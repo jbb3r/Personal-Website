@@ -1,10 +1,10 @@
 nav a:link {
-  color: #e19b95;
+  color: #EDAE49;
   text-decoration: none;
 }
 
 nav a:visited {
-  color: #e19b95;
+  color: #EDAE49;
   text-decoration: none;
 }
 
@@ -18,7 +18,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 2rem;
-  border-bottom: 0.3rem solid #89e3ef;
+  border-bottom: 0.3rem solid #FE5F55;
 }
 
 .nav {
@@ -29,7 +29,7 @@ a:hover {
 }
 
 .nav-button {
-  color: #e19b95;
+  color: #EDAE49;
   text-decoration: none;
   font-size: 2rem;
   margin: 0.5rem;
@@ -37,7 +37,7 @@ a:hover {
 }
 
 .nav-button:hover {
-  color: #89e3ef;
+  color: #FE5F55;
 }
 
 .footer {
@@ -51,7 +51,7 @@ a:hover {
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  color: #e19b95;
+  color: #EDAE49;
 }
 
 .footer-buttons {
@@ -61,12 +61,12 @@ a:hover {
 
 .footer-button {
   transition: 0.1s ease-in;
-  color: #e19b95;
+  color: #EDAE49;
   text-decoration: none;
 }
 
 .footer-button:hover {
-  color: #fbffca;
+  color: #18A999;
 }
 
 @media (max-width: 400px) {
@@ -177,14 +177,14 @@ a {
 }
 
 .resume {
-  color: #fbffca;
+  color: #18A999;
   font-family: "Josefin Sans", sans-serif;
   transition: ease-in 0.15s;
   font-size: 1.5rem;
 }
 
 .resume:hover {
-  color: #89e3ef;
+  color: #FE5F55;
 }
 
 @media (min-width: 1400px) {
@@ -194,7 +194,7 @@ a {
 }
 .contactForm {
   margin-top: 5rem;
-  color: #e19b95;
+  color: #EDAE49;
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -230,7 +230,7 @@ textarea {
 }
 
 .submit {
-  background-color: #fbffca !important;
+  background-color: #18A999 !important;
   border: none !important;
   text-transform: uppercase !important;
   font-style: normal !important;
@@ -242,7 +242,7 @@ textarea {
 }
 
 .submit:hover {
-  background-color: #89e3ef !important;
+  background-color: #FE5F55 !important;
   transition: 0.15s ease-in !important;
 }
 
@@ -299,13 +299,13 @@ p {
   font-style: italic;
   border: 1px solid transparent;
   font-family: "Josefin Sans", sans-serif;
-  color: #e19b95;
+  color: #EDAE49;
   cursor: pointer;
   margin-right: 1rem;
 }
 
 .portfolio-sectionTitle:hover {
-  color: #89e3ef;
+  color: #FE5F55;
   transition: ease-in 0.3s;
 }
 
@@ -528,7 +528,7 @@ p {
   }
 }
 .portfolio-items-container {
-  color: #fbffca;
+  color: #18A999;
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -558,7 +558,7 @@ p {
 
 .portfolio-item-description {
   font-family: "Josefin Sans", sans-serif;
-  color: #fbffca;
+  color: #18A999;
   font-style: italic;
   margin-bottom: 4rem;
 }
@@ -584,7 +584,7 @@ body {
   margin: 5%;
   margin-left: 8%;
   margin-right: 8%;
-  background-color: #25252c;
+  background-color: #292929;
 }
 
 @media (min-width: 1000px) {
